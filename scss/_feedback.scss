@@ -1,0 +1,94 @@
+.feedback{
+    min-height: 610px;
+    background:url("../img/feedback_bg.png") no-repeat center center;
+    background-size: cover;
+    &__title{
+        color:#e5e5e5;
+    }
+    &__subtitle{
+        color:#767a7d
+    }  
+    &-block{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__text{
+            text-align: center;
+            font-size:16px;
+            font-style: italic;
+            color:#767a7d;
+
+        }
+        &__info{
+            position: relative;
+            margin-bottom:15px;
+            &::after{
+                content:"";
+                position: absolute;
+                width:35px;
+                height:5px;
+                background-color:#18a3dd;
+                margin-top:10px;
+                border-radius:2px;
+
+            }
+        }
+        &__author{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:30px;
+            &__name{
+                display:block;
+                margin-bottom:5px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 800;
+                font-style:normal;
+                font-size:16px;
+                color:#e5e5e5;
+                text-transform: uppercase;            
+
+            }
+            &__city{  
+                display:block;
+                color:#8c8a8d;
+                font-style:normal;
+                font-size:14px;
+
+            }
+        }
+        &__img{
+            background: url("../img/feedback-img.png") no-repeat;
+            background-size: 200%;
+            background-position: -45px -5px;
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+             width:65px;
+             height:73px;
+             margin-right:25px;
+        }  
+
+
+        
+    }
+}
+.slider-container{
+    &__content{
+        &__item{
+            width: 100%;
+        }
+
+    }
+}
+@media(max-width:768px){
+    .feedback{
+        &__title{
+            font-size: 24px;
+        }
+        &__subtitle {
+            margin-bottom: 40px;
+            font-size: 14px;
+        }
+    }
+}

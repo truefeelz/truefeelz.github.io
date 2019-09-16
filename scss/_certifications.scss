@@ -1,0 +1,63 @@
+.certifications{
+    min-height:370px;
+    background-color:#f1f4f5;
+    &-block{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+       
+        &__item{
+            min-width:195px;
+            min-height:102px;
+       
+            background:#f1f4f5 url("../img/sprites.png");
+            background-blend-mode:multiply;
+            &:not(:first-child){
+                border-left:1px solid #dcdcdc;
+                margin-left:10px;
+            }
+     
+            &-1{
+              
+                background-position: -9px -53px;
+                min-width:150px;
+               
+            }
+            &-2{
+                background-position: -180px -53px;
+                min-width:180px;
+              
+            }
+            &-3{
+                background-position: -440px -53px;
+              
+            }
+            &-4{
+                background-position: -720px -53px;
+               
+            }
+            &-5{
+                background-position: -1040px -53px;
+             
+            }
+        }
+    }
+}
+
+@media (max-width:960px){
+    .certifications{
+        &-block{
+            flex-wrap: wrap;
+            
+            &__item{
+                padding:10px 0;
+                
+                &:not(:first-child){
+                    border-left:none;
+                    border:none;
+                }
+            }
+        }
+    
+    }
+}
